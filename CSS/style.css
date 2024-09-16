@@ -465,7 +465,8 @@ video {
 
   font-display: swap;
 
-  src: url("../Fraunces/static/Fraunces_144pt/Fraunces_144pt-Regular.ttf") format("truetype");
+  src: url("../Fraunces/static/Fraunces_144pt/Fraunces_144pt-Regular.ttf")
+      format("truetype");
 }
 
 html {
@@ -805,6 +806,38 @@ html {
   background-image: url('/images/desktop/image-transform.jpg');
 }
 
+.bg-\[url\(images\/desktop\/image-header\.jpg\)\] {
+  background-image: url(images/desktop/image-header.jpg);
+}
+
+.bg-\[url\(\'images\/desktop\/image-header\.jpg\'\)\] {
+  background-image: url('images/desktop/image-header.jpg');
+}
+
+.bg-\[url\(\'\.\/images\/desktop\/image-header\.jpg\'\)\] {
+  background-image: url('./images/desktop/image-header.jpg');
+}
+
+.bg-\[url\(\/images\/desktop\/image-header\.jpg\)\] {
+  background-image: url(/images/desktop/image-header.jpg);
+}
+
+.bg-\[url\(\/images\/desktop\/image-graphic-design\.jpg\)\] {
+  background-image: url(/images/desktop/image-graphic-design.jpg);
+}
+
+.bg-\[url\(\/images\/desktop\/image-photography\.jpg\)\] {
+  background-image: url(/images/desktop/image-photography.jpg);
+}
+
+.bg-\[url\(\/images\/desktop\/image-stand-out\.jpg\)\] {
+  background-image: url(/images/desktop/image-stand-out.jpg);
+}
+
+.bg-\[url\(\/images\/desktop\/image-transform\.jpg\)\] {
+  background-image: url(/images/desktop/image-transform.jpg);
+}
+
 .bg-cover {
   background-size: cover;
 }
@@ -926,9 +959,9 @@ html {
   position: absolute;
 }
 
-.after\:relative::after {
+.after\:bottom-full::after {
   content: var(--tw-content);
-  position: relative;
+  bottom: 100%;
 }
 
 .after\:right-0::after {
@@ -936,74 +969,9 @@ html {
   right: 0px;
 }
 
-.after\:top-0::after {
+.after\:border-b-\[2rem\]::after {
   content: var(--tw-content);
-  top: 0px;
-}
-
-.after\:bottom-full::after {
-  content: var(--tw-content);
-  bottom: 100%;
-}
-
-.after\:-bottom-full::after {
-  content: var(--tw-content);
-  bottom: -100%;
-}
-
-.after\:top-full::after {
-  content: var(--tw-content);
-  top: 100%;
-}
-
-.after\:-right-0::after {
-  content: var(--tw-content);
-  right: -0px;
-}
-
-.after\:h-4::after {
-  content: var(--tw-content);
-  height: 1rem;
-}
-
-.after\:h-6::after {
-  content: var(--tw-content);
-  height: 1.5rem;
-}
-
-.after\:w-4::after {
-  content: var(--tw-content);
-  width: 1rem;
-}
-
-.after\:w-6::after {
-  content: var(--tw-content);
-  width: 1.5rem;
-}
-
-.after\:border-b-8::after {
-  content: var(--tw-content);
-  border-bottom-width: 8px;
-}
-
-.after\:border-l-4::after {
-  content: var(--tw-content);
-  border-left-width: 4px;
-}
-
-.after\:border-b-\[6rem\]::after {
-  content: var(--tw-content);
-  border-bottom-width: 6rem;
-}
-
-.after\:border-l-\[3rem\]::after {
-  content: var(--tw-content);
-  border-left-width: 3rem;
-}
-
-.after\:border-b-\[4rem\]::after {
-  content: var(--tw-content);
-  border-bottom-width: 4rem;
+  border-bottom-width: 2rem;
 }
 
 .after\:border-l-\[2rem\]::after {
@@ -1011,43 +979,15 @@ html {
   border-left-width: 2rem;
 }
 
-.after\:border-b-\[2rem\]::after {
-  content: var(--tw-content);
-  border-bottom-width: 2rem;
-}
-
-.after\:border-l-\[1rem\]::after {
-  content: var(--tw-content);
-  border-left-width: 1rem;
-}
-
-.after\:border-black::after {
+.after\:border-b-white::after {
   content: var(--tw-content);
   --tw-border-opacity: 1;
-  border-color: rgb(0 0 0 / var(--tw-border-opacity));
-}
-
-.after\:border-b-black::after {
-  content: var(--tw-content);
-  --tw-border-opacity: 1;
-  border-bottom-color: rgb(0 0 0 / var(--tw-border-opacity));
-}
-
-.after\:border-l-black::after {
-  content: var(--tw-content);
-  --tw-border-opacity: 1;
-  border-left-color: rgb(0 0 0 / var(--tw-border-opacity));
+  border-bottom-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
 .after\:border-l-transparent::after {
   content: var(--tw-content);
   border-left-color: transparent;
-}
-
-.after\:border-b-white::after {
-  content: var(--tw-content);
-  --tw-border-opacity: 1;
-  border-bottom-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
 .after\:bg-soft-red::after {

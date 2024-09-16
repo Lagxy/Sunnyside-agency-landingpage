@@ -15,7 +15,8 @@
     font-family: "Fraunces";
     font-weight: 700, 900;
     font-display: swap;
-    src: url("../Fraunces/static/Fraunces_144pt/Fraunces_144pt-Regular.ttf") format("truetype");
+    src: url("../Fraunces/static/Fraunces_144pt/Fraunces_144pt-Regular.ttf")
+      format("truetype");
   }
 
   html {
