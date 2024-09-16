@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <title>Frontend Mentor | Sunnyside agency landing page</title>
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="text-white">
+      <nav class="fixed flex justify-between items-center w-full p-8 z-50">
+        <h1 class="font-extrabold text-2xl">Sunnyside</h1>
+
+        <button class="sm:hidden" id="hamburger-btn">
+          <img src="/images/icon-hamburger.svg" alt="hamburger icon">
+        </button>
+        <!-- used for both mobile and desktop -->
+        <ul id="main-nav" class="absolute sm:relative inset-0 top-full mx-auto sm:mx-0 bottom hidden sm:flex flex-col sm:flex-row justify-between items-center gap-8 text-center sm:bg-transparent bg-white sm:text-inherit text-gray-500 py-12 sm:py-0 h-fit w-10/12 sm:w-fit after:sm:hidden after:absolute after:bottom-full after:right-0 after:border-b-white after:border-b-[2rem] after:border-l-[2rem] after:border-l-transparent">
+          <li><a href="">About</a></li>
+          <li><a href="">Services</a></li>
+          <li><a href="">Projects</a></li>
+          <li><a href="" class="font-['Barlow'] font-bold text-black bg-soft-yellow sm:bg-white rounded-3xl p-4 sm:hover:bg-[rgba(255,255,255,0.2)] sm:hover:text-white">CONTACT</a></li>
+        </ul>
+      </nav>
+
+      <div class="h-screen flex flex-col justify-center items-center gap-8 bg-[url('/images/desktop/image-header.jpg')] bg-no-repeat bg-center bg-cover">
+        <h1 class="font-['Fraunces'] font-black text-8xl text-center">WE ARE CREATIVES</h1>
+        <img src="./images/icon-arrow-down.svg" alt="arrow down icon" />
+      </div>
+    </header>
+
+    <main>
+      <section class="grid grid-cols-1 place-items-center text-center sm:text-start">
+        <div class="flex w-full flex-col-reverse sm:flex-row">
+          <div class="card">
+            <div class="benefit">
+              <h1 class="text-5xl font-bold">Transform Your Brand</h1>
+              <p>We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you.</p>
+              <div>
+                <a href="" class="px-1 inline relative oval-underline after:bg-soft-yellow hover:after:opacity-100">LEARN MORE</a>
+              </div>
+            </div>
+          </div>
+          <div class="card bg-[url('/images/desktop/image-transform.jpg')] bg-no-repeat bg-center bg-cover"></div>
+        </div>
+        <div class="flex w-full flex-col sm:flex-row">
+          <div class="card bg-[url('/images/desktop/image-stand-out.jpg')] bg-no-repeat bg-center bg-cover"></div>
+          <div class="card">
+            <div class="benefit">
+              <h1 class="text-4xl font-bold">Stand out to the right audience</h1>
+              <p>Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we'll build and extend your brand in digital palaces.</p>
+              <div>
+                <a href="" class="px-1 inline relative oval-underline after:bg-soft-red hover:after:opacity-100">LEARN MORE</a>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex w-full flex-col sm:flex-row">
+          <div class="card bg-[url('/images/desktop/image-graphic-design.jpg')] bg-no-repeat bg-center bg-cover">
+            <div class="benefit h-full justify-end text-center text-dark-desaturated-cyan">
+              <h1 class="text-2xl">Graphic Design</h1>
+              <p class="max-w-[40ch]">Great design makes you memorable. We deliver artwork that underscores your brand message and capture potential client's attention.</p>
+            </div>
+          </div>
+          <div class="card bg-[url('/images/desktop/image-photography.jpg')] bg-no-repeat bg-center bg-cover">
+            <div class="benefit h-full justify-end text-center text-dark-blue">
+              <h1 class="text-2xl">Photography</h1>
+              <p class="max-w-[40ch]">Increase you credibility by getting the most stunning, high-quality photos that improve your business image.</p>
+            </div>
+          </div>
+        </div>
+        
+        
+        
+      </section>
+
+      <section class="text-center min-h-screen flex flex-col justify-evenly items-center gap-12 py-12 text-pretty">
+        <h1 class="font-['Barlow'] font-black text-2xl opacity-60 tracking-[.5rem]">CLIENTS TESTIMONIALS</h1>
+        <div class="grid grid-cols-1 sm:grid-cols-3 place-items-center gap-8">
+          <div class="testimoni">
+            <img class="rounded-full" src="/images/image-emily.jpg" alt="profile picture">
+            <p class="opacity-60 font-semibold">We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
+            <div>
+              <p class="font-black text-xl">Emily R.</p>
+              <p class="opacity-60">Marketing Director</p>
+            </div>
+          </div>
+          <div class="testimoni">
+            <img class="rounded-full" src="/images/image-thomas.jpg" alt="profile picture">
+            <p class="opacity-60 font-semibold">Sunnyside's enthusiasm coupled with their keen interest in our brand's success made it a satisfying and enjoyable experience.</p>
+            <div>
+              <p class="font-black text-xl">Thomas S.</p>
+              <p class="opacity-60">Chief Operating Officer</p>
+            </div>
+          </div>
+          <div class="testimoni">
+            <img class="rounded-full" src="/images/image-jennie.jpg" alt="profile picture">
+            <p class="opacity-60 font-semibold">Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
+            <div>
+              <p class="font-black text-xl">Jennie F.</p>
+              <p class="opacity-60">Business Owner</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="grid grid-cols-2 sm:grid-cols-4">
+        <img src="/images/desktop/image-gallery-milkbottles.jpg" alt="milk bottle">
+        <img src="/images/desktop/image-gallery-orange.jpg" alt="orange on a plate">
+        <img src="/images/desktop/image-gallery-cone.jpg" alt="ice cream cone">
+        <img src="/images/desktop/image-gallery-sugarcubes.jpg" alt="sugar blocks">
+      </section>
+    </main>
+
+    <footer class="flex flex-col justify-center items-center p-4 gap-20 text-dark-desaturated-cyan bg-dark-moderate-cyan">
+      <div class="flex flex-col gap-8 text-center">
+        <h1 class="font-extrabold text-2xl">Sunnyside</h1>
+        <!-- Somehow not aligned -->
+        <ul class="flex justify-center items-center gap-14">
+          <li><a class="hover:text-white" href="">About</a></li>
+          <li><a class="hover:text-white" href="">Services</a></li>
+          <li><a class="hover:text-white" href="">Projects</a></li>
+        </ul>
+      </div>
+      <div class="flex justify-center items-center gap-8">
+        <a href=""><img class="hover:filter hover:invert hover:brightness-0" src="/images/icon-facebook.svg" alt="facebook icon" /></a>
+        <a href=""><img class="hover:filter hover:invert hover:brightness-0" src="/images/icon-instagram.svg" alt="instagram icon" /></a>
+        <a href=""><img class="hover:filter hover:invert hover:brightness-0" src="/images/icon-twitter.svg" alt="twitter icon" /></a>
+        <a href=""><img class="hover:filter hover:invert hover:brightness-0" src="/images/icon-pinterest.svg" alt="pinterest icon" /></a>
+      </div>
+    </footer>
+
+    <div class="attribution">Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="https://github.com/Lagxy">Lagxy</a>.</div>
+  </body>
+</html>
